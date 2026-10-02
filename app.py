@@ -3,7 +3,10 @@ from firestore_client import get_db
 import hashlib
 
 st.set_page_config(page_title="Inventario", layout="wide")
-db = get_db()
+if "db" not in st.session_state:
+    st.session_state.db = get_db()
+
+db = st.session_state.db
 
 # --- Autenticación simple ---
 if "user" not in st.session_state:
