@@ -1,6 +1,6 @@
 import streamlit as st
 from firestore_client import get_db
-import hashlib
+import bcrypt
 
 st.set_page_config(page_title="Inventario", layout="wide")
 if "db" not in st.session_state:
@@ -17,7 +17,7 @@ if "user" not in st.session_state:
     if st.button("Entrar"):
         # Verificar en Firestore (colección "users")
         doc = db.collection("users").document(email).get()
-        if doc.exists and doc["password_hash"] == hashlib.sha256(password.encode()).hexdigest():
+        if doc.exists and doc["password_hash"] == bcrypt.hashpw(password):
             st.session_state.user = doc["name"]
             st.success(f"Bienvenido, {doc['name']}")
         else:
