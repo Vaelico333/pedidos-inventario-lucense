@@ -1,2 +1,4 @@
 *.key
 lucense-venv
+*.pyc
+__pycache__/
