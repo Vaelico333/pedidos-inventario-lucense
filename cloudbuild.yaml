@@ -1,21 +1,21 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', '${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO}/deploy-lucense:$COMMIT_SHA', '.']
+    args: ['build', '-t', '${_us-east1}-docker.pkg.dev/${PROJECT_ID}/${_REPO}/deploy-lucense:$COMMIT_SHA', '.']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', '${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO}/deploy-lucense:$COMMIT_SHA']
+    args: ['push', '${_us-east1}-docker.pkg.dev/${PROJECT_ID}/${_REPO}/deploy-lucense:$COMMIT_SHA']
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     args:
       - run
       - deploy
       - deploy-lucense
       - --image
-      - ${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO}/deploy-lucense:$COMMIT_SHA
-      - --region
-      - ${_REGION}
+      - ${_us-east1}-docker.pkg.dev/${PROJECT_ID}/${_REPO}/deploy-lucense:$COMMIT_SHA
+      - --us-east1
+      - ${_us-east1}
       - --platform
       - managed
 options:
   logging: CLOUD_LOGGING_ONLY
 substitutions:
-  _REGION: europe-west1
+  _us-east1: europe-west1
   _REPO: pedidos-inventario-lucense   
