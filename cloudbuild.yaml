@@ -5,6 +5,7 @@ steps:
     args: ['push', '${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO}/deploy-lucense:$COMMIT_SHA']
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     args:
+      - gcloud
       - run
       - deploy
       - deploy-lucense
