@@ -1,0 +1,389 @@
+{
+    "Frutas Conchi":{
+        "Teléfono":"609173592",
+        "Productos":[
+            "Cebolla blanca",
+            "Cebolla morada",
+            "Cebolleta china",
+            "Ajo morado",
+            "Puerro",
+            "Zanahorias",
+            "Berenjena",
+            "Pimiento verde",
+            "Pimiento rojo",
+            "Pimiento padrón",
+            "Tomate pera",
+            "Tomate cherry",
+            "Tomate extra",
+            "Naranja de zumo",
+            "Lima",
+            "Limón amarillo",
+            "Uvas",
+            "Plátano",
+            "Piña",
+            "Aguacate",
+            "Cebollino",
+            "Cilantro",
+            "Rúcula",
+            "Micromezclum",
+            "Champiñón",
+            "Lechuga batavia",
+            "Lechuga de hoja de roble",
+            "Garbanzos",
+            "Lentejas",
+            "Berza",
+            "Nabos",
+            "Perejil"
+        ]
+    },
+    "Makro":{
+        "Teléfono":["983456319", "620284487"],
+        "Productos":[
+            "Granola con chocolate Aro",
+            "Pan de molde blanco 11x11",
+            "Tortilla de trigo",
+            "Pasta",
+            "Fideos",
+            "Arroz",
+            "Tortilla de maíz 15cm",
+            "Almendra cruda",
+            "Pipas de calabaza",
+            "Pipas de girasol",
+            "Pasas",
+            "Nueces",
+            "Guacamole",
+            "Garbanzos en lata",
+            "Tomate doble concentrado",
+            "Jalapeños",
+            "Yondu",
+            "Caldo de carne",
+            "Caldo de pollo",
+            "Caldo de pescado",
+            "Queso cheddar en barra La Fuente",
+            "Tequeños de gouda",
+            "Harina sin gluten",
+            "Azúcar moreno",
+            "Azúcar glass",
+            "Miel",
+            "Dulce de leche",
+            "Topping de dulce de leche",
+            "Sal fina 5kg",
+            "Sal en escamas",
+            "Pimentón picante",
+            "Pimentón dulce de la Vera",
+            "Orégano",
+            "Romero",
+            "Tomillo seco",
+            "Laurel",
+            "Cayena",
+            "Pimienta",
+            "Chipotle",
+            "Salsa BBQ Coosur",
+            "Ketchup",
+            "Mostaza antigua",
+            "Mostaza",
+            "Vinagre de Jerez",
+            "Galleta María",
+            "Galleta lotus",
+            "Magdalena sin gluten",
+            "Mantequilla monodosis",
+            "Mermelada monodosis",
+            "Impulsor o levadura",
+            "Vino amontillado",
+            "Vino blanco 5l",
+            "Brandy",
+            "Vino fino",
+            "Leche Aro",
+            "Agua con gas",
+            "Papel de horno",
+            "Papel de aluminio",
+            "Cargas de sifón",
+            "Brochetas 15cm 200u",
+            "Brocheta roja",
+            "Canela en rama 150g",
+            "Leche condensada",
+            "Zitron zumo concentrado lima 2l",
+            "Chapatón",
+            "Citronella",
+            "Tartufata",
+            "Crema American Burger Heinz",
+            "Cobertura chocolate blanco",
+            "Cacao en polvo",
+            "Cobertura chocolate negro",
+            "Rollo de film",
+            "Pajitas de colores 8mm",
+            "Fairy"
+        ]
+    },
+    "Tudis":{
+        "Teléfono":"671668523",
+        "Productos":[
+            "Mayonesa Tudis (promoción)",
+            "Pluma armuñesa",
+            "Oreja cocida",
+            "Dulce de bacon",
+            "Dulce de cecina",
+            "Anchoa de gilda",
+            "Alitas misisipi",
+            "Frutos rojos congelados",
+            "Pulled pork",
+            "Nata KEN gourmet duo",
+            "Yogurt 5kg",
+            "Salsa baconesa",
+            "Salsa cheddar",
+            "Pan baguel",
+            "Merluza rellena de puerro y gambas",
+            "Trucha menú",
+            "Bacaladilla menú",
+            "Pan mini burguer",
+            "Maizena express clara",
+            "Maizena express oscura",
+            "Lubina",
+            "Maizena normal"
+        ]
+    },
+    "Carnicero Olivares":{
+        "Teléfono":"619300372",
+        "Productos":[
+            "Filetes de cachopo",
+            "Pechuga en tiras",
+            "Picaña",
+            "Muslos y contramuslos de pollo"
+        ]
+    },
+    "Alondra":{
+        "Teléfono":"669283068",
+        "Productos":[
+            "Boquerones en mariposa"
+        ]
+    },
+    "Merimar":{
+        "Teléfono":"607498030",
+        "Productos":[
+            "Merluza volanta",
+            "Salmón menú fin de semana"
+        ]
+    },
+    "Sipal":{
+        "Teléfono":"679962232",
+        "Productos":[
+            "Morena de pistacho"
+        ]
+    },
+    "Palenzuela":{
+        "Teléfono":"636383329",
+        "Productos":[
+            "Queso crema",
+            "Puré de mango",
+            "Mantequilla",
+            "Queso feta",
+            "Piquillos",
+            "Tomate frito",
+            "Mozzarella rayada",
+            "Parmesano en polvo",
+            "Queso sándwich",
+            "Queso azul en migas",
+            "Queso gouda ahumado"
+        ]
+    },
+    "El mar":{
+        "Teléfono":"663701421",
+        "Productos":[
+            "Gambón pelado",
+            "Periquito (gambas)",
+            "Vaina de pota (calamar)"
+        ]
+    },
+    "Patatas Meléndez":{
+        "Teléfono":"686660813",
+        "Productos":[
+            "Patata de freír",
+            "Patata roja de cocer"
+        ]
+    },
+    "Doña Tomasa":{
+        "Teléfono":"608313149",
+        "Productos":[
+            "Boquerones en vinagre"
+        ]
+    },
+    "Gourmetpan":{
+        "Teléfono":"685860066",
+        "Productos":[
+            "Kimchie",
+            "Mayonesa kewpie",
+            "Salmorreta",
+            "Salmón ahumado",
+            "Cargas de soplete",
+            "Gochujang",
+            "Salsa de soja",
+            "Panko"
+        ]
+    },
+    "Nutralid":{
+        "Teléfono":["692118414", "675730363"],
+        "Productos":[
+            "Croissant",
+            "Crujiente gourmet express (piripi)",
+            "Payesitos 80g (96uds)",
+            "Baguette",
+            "Donuts de caramelo",
+            "Mollete",
+            "Panecillo sin gluten (105g)"
+        ]
+    },
+    "Eresma (Ana)":{
+        "Teléfono":"676977725",
+        "Productos":[
+            "Paleta (desayuno)"
+        ]
+    },
+    "Fadis":{
+        "Teléfono":"667764925",
+        "Productos":[
+            "Mantequilla clarificada",
+            "Torreznos carta",
+            "Torreznos Crema",
+            "Rulo de cabra",
+            "Lacón",
+            "Bacon"
+        ]
+    },
+    "Ajá":{
+        "Teléfono":"655877056",
+        "Productos":[
+            "Alcachofas",
+            "Migas de atún",
+            "Lata de ventresca",
+            "Helado de vainilla",
+            "Sésamo negro",
+            "Pan brioche para torrijas",
+            "Harina de trigo",
+            "Comino",
+            "Ajo granulado",
+            "Helado fresa-vainilla-chocolate",
+            "Helado KitKat",
+            "Helado Oreo",
+            "Helado Milka"
+        ]
+    },
+    "Huevos de la abuela":{
+        "Teléfono":"605353184",
+        "Productos":[
+            "Huevos camperos"
+        ]
+    },
+    "Ana Valdestillas":{
+        "Teléfono":"615937717",
+        "Productos":[
+            "Pan de burguer"
+        ]
+    },
+    "Olibher":{
+        "Teléfono":"635724690",
+        "Productos":[
+            "Aceitunas rellenas de anchoa",
+            "Pepinillos",
+            "Piparras"
+        ]
+    },
+    "Ecocyl":{
+        "Teléfono":"627583287",
+        "Productos":[
+            "Aceite de oliva 0,4º",
+            "Aceite de girasol",
+            "Aceite virgen extra",
+            "Aceite freidora"
+        ]
+    },
+    "Valdecuevas":{
+        "Teléfono":"678215704",
+        "Productos":[
+            "Aceite de arbequina"
+        ]
+    },
+    "Mannix (Gemma)":{
+        "Teléfono":"-",
+        "Productos":[
+            "Carne picada"
+        ]
+    },
+    "Cárnicas Gutiérrez":{
+        "Teléfono":"696465154",
+        "Productos":[
+            "Costilla adobada",
+            "Panceta",
+            "Gallina",
+            "Espinazo",
+            "Hueso de jamón",
+            "Morcillo",
+            "Chorizo",
+            "Hueso blanco",
+            "Morcillas",
+            "Tocino",
+            "Chorizo",
+            "Falda sin hueso",
+            "Jijas"
+        ]
+    },
+    "Arcecarne (Gemma)":{
+        "Teléfono":"-",
+        "Productos":[
+            "Burguer Crema"
+        ]
+    },
+    "Servifood":{
+        "Teléfono":"607476086",
+        "Productos":[
+            "Jamón york desayuno",
+            "Brócoli",
+            "Secreto",
+            "Solomillo",
+            "Setas congeladas",
+            "Patatas Crema",
+            "Lomo al ajillo",
+            "Pimiento relleno de bacalao",
+            "Vaina de pota (calamar)"
+        ]
+    },
+    "Limpieza Efihigiene":{
+        "Teléfono":"672286119",
+        "Productos":[
+            "Esponjas",
+            "Bayetas",
+            "Friegasuelos",
+            "Guantes",
+            "Papel de plata",
+            "Papel de baño",
+            "Papel de manos",
+            "Fregonas",
+            "Escobas",
+            "Desengrasante normal",
+            "Desengrasante plancha",
+            "Bolsas de basura grandes",
+            "Bolsas de basura pequeñas",
+            "Bolsas de vacío",
+            "Paños de cocina",
+            "Lejía",
+            "Papel de cocina"
+        ]
+    },
+    "Distribuciones Puerto":{
+        "Teléfono":"647414102",
+        "Productos":[
+            "Tupers ovalados",
+            "Tupers redondos",
+            "Tupers transparentes",
+            "Tarrina de salsas",
+            "Bolsas de asas",
+            "Conchas negras Crema",
+            "Bolsas de papel Crema",
+            "Bolsas de papel blanco",
+            "Sobres negros Crema",
+            "Tarrinas de patatas Crema",
+            "Servilletas Crema",
+            "Papel serigrafiado Crema",
+            "Pajitas granizado x6"
+        ]
+    }
+}
