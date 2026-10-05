@@ -13,10 +13,10 @@ def login_user():
     db = st.session_state.db
     if st.button("Entrar"):
         doc = db.collection("users").document(email).get().to_dict()
-        if doc and check_password(password, doc["password_hash"]):
+        if doc and check_password(password, doc.get("password_hash")):
             st.session_state.user = {
                 "email": email,
-                "name": doc["name"],
+                "name": doc.get("name"),
                 "role": doc.get("role", "user")
             }
             st.rerun()
