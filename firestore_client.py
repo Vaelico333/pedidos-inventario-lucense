@@ -2,4 +2,4 @@ import os, json
 from google.cloud import firestore
 
 def get_db():
-    return firestore.Client()
+    return firestore.Client(database="inventario-lucense")
