@@ -21,9 +21,9 @@ def main():
 
     if "user" not in st.session_state:
         with col_user:
-            if st.button("Acceder", key="btn-login"):
+            with st.expander("Acceder", key="btn-login"):
                 login_user()
-            if st.button("Registrarse", key="btn-reg"):
+            with st.expander("Registrarse", key="btn-reg"):
                 register_user()
     # ──────────────────────────────────────────────
     #  APP PRINCIPAL (usuario autenticado)
