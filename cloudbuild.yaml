@@ -8,7 +8,7 @@ steps:
       - gcloud
       - run
       - deploy
-      - NOMBRE_SERVICIO
+      - deploy-lucense
       - --image
       - us-east1-docker.pkg.dev/inventario-lucense/pedidos-inventario-lucense/deploy-lucense:$COMMIT_SHA
       - --region
