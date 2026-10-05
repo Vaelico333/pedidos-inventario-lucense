@@ -7,6 +7,8 @@ class PaginaPedidos():
     def render_resumen_pedido():
         st.sidebar.header("📋 Pedido Actual")
         if st.session_state.pedido:
+            if st.button("🗑️ Borrar lista"):
+                st.session_state.pedido.clear()
             col_txt, col_borrar = st.columns([4,1])
             for item, cantidad in list(st.session_state.pedido.items()):
                 with col_txt:
