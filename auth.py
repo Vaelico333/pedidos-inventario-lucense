@@ -12,7 +12,7 @@ def login_user():
     password = st.text_input("Contraseña", type="password", key="login_pass")
     db = st.session_state.db
     if st.button("Entrar"):
-        doc = db.collection("users").document(email).get()
+        doc = db.collection("users").document(email).get().to_dict()
         if doc.exists and check_password(password, doc["password_hash"]):
             st.session_state.user = {
                 "email": email,
