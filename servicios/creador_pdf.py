@@ -1,4 +1,8 @@
-from reportlab.lib.pagesizes import letter
+import reportlab.platypus.paragraph
+from reportlab.lib.styles import PropertySet
+from reportlab.lib.styles import StyleSheet1
+from typing import Any
+from reportlab.lib.pagesizes import A4
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, Image
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib import colors
@@ -7,7 +11,7 @@ from datetime import datetime
 import os
 
 
-def generar_pdf_pedido(pedido_dict):
+def generar_pdf_pedido(pedido_dict: dict[str, int]) -> io.BytesIO:
     """
     Recibe el diccionario de st.session_state.pedido 
     y devuelve un archivo binario en memoria listo para descargar.
@@ -17,11 +21,11 @@ def generar_pdf_pedido(pedido_dict):
     buffer = io.BytesIO()
     
     # 2. Configurar el documento básico (Márgenes de 1.5 cm aprox)
-    doc = SimpleDocTemplate(buffer, pagesize=letter, rightMargin=40, leftMargin=40, topMargin=40, bottomMargin=40)
-    story = []
+    doc = SimpleDocTemplate(buffer, pagesize=A4, rightMargin=40, leftMargin=40, topMargin=40, bottomMargin=40)
+    story: list[Any] = []
     
     # 3. Configurar los estilos de texto
-    styles = getSampleStyleSheet()
+    styles: StyleSheet1 = getSampleStyleSheet()
     
     # Estilo personalizado para el título
     style_titulo = ParagraphStyle(
@@ -34,14 +38,14 @@ def generar_pdf_pedido(pedido_dict):
     )
     
     # Estilo para el texto común y celdas
-    style_texto = styles['Normal']
+    style_texto: PropertySet = styles['Normal']
     style_cabecera_tabla = ParagraphStyle('Cabecera', parent=styles['Normal'], textColor=colors.white, fontName="Helvetica-Bold")
 
     # 4. Añadir Encabezado del PDF
-    fecha = datetime.now().strftime('%d/%m/%Y')
+    fecha: str = datetime.now().strftime('%d/%m/%Y')
     p_titulo = Paragraph(f'<b>Borrador de Pedido - Bar Lucense</b><br/><b>Fecha:</b> {fecha}', style_titulo)
 
-    ruta_logo = './LOGO-LUCENSE_COMPLETO.webp'
+    ruta_logo = './img/LOGO-LUCENSE_COMPLETO.webp'
     if os.path.exists(ruta_logo):
         logo_pdf = Image(ruta_logo, width=108, height=54)
         tabla_cabecera = Table([[logo_pdf, p_titulo]], colWidths=[140, 390])
@@ -62,21 +66,21 @@ def generar_pdf_pedido(pedido_dict):
 
     # 5. Estructurar los datos para la Tabla
     # Definimos las columnas: [Proveedor, Producto, Cantidad]
-    datos_tabla = [[
+    datos_tabla: list[list[reportlab.platypus.paragraph.Paragraph]] = [[
         Paragraph("<b>Proveedor</b>", style_cabecera_tabla), 
         Paragraph("<b>Producto</b>", style_cabecera_tabla), 
+        Paragraph("<b>Presentación</b>", style_cabecera_tabla), 
         Paragraph("<b>Cantidad Pedida</b>", style_cabecera_tabla)
     ]]
     
     for item, cantidad in pedido_dict.items():
         # Tu id_item está guardado como 'Proveedor - Producto'
         if " - " in item:
-            prov, prod = item.split(" - ", 1)
-        else:
-            prov, prod = "General", item
+            prov, pres, prod = item.split(" - ", 2)
             
         datos_tabla.append([
             Paragraph(prov, style_texto),
+            Paragraph(pres, style_texto),
             Paragraph(prod, style_texto),
             Paragraph(f"<b>{cantidad} uds</b>", style_texto)
         ])

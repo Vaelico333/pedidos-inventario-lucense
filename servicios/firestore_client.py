@@ -1,4 +1,3 @@
-import os, json
 from google.cloud import firestore
 
 def get_db():

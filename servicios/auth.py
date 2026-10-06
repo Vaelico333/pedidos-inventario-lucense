@@ -8,8 +8,8 @@ def check_password(password: str, hashed: str) -> bool:
     return bcrypt.checkpw(password.encode("utf-8"), hashed.encode("utf-8"))
 
 def login_user():
-    email = st.text_input("Email", key="login_email")
-    password = st.text_input("Contraseña", type="password", key="login_pass")
+    email: str = st.text_input("Email", key="login_email")
+    password: str = st.text_input("Contraseña", type="password", key="login_pass")
     db = st.session_state.db
     if st.button("Entrar"):
         doc = db.collection("users").document(email).get().to_dict()
@@ -25,10 +25,10 @@ def login_user():
 
 def register_user():
     st.subheader("Crear cuenta")
-    name = st.text_input("Nombre", key="reg_name")
-    email = st.text_input("Email", key="reg_email")
-    password = st.text_input("Contraseña", type="password", key="reg_pass")
-    confirm = st.text_input("Confirmar contraseña", type="password", key="reg_confirm")
+    name: str = st.text_input("Nombre", key="reg_name")
+    email: str = st.text_input("Email", key="reg_email")
+    password: str = st.text_input("Contraseña", type="password", key="reg_pass")
+    confirm: str = st.text_input("Confirmar contraseña", type="password", key="reg_confirm")
     db = st.session_state.db
 
     if st.button("Registrarse"):
