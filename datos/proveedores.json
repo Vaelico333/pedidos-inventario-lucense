@@ -1,0 +1,400 @@
+{
+    "Frutas Conchi":{
+        "Teléfono":"609173592",
+        "Productos":[
+            "Cebolla blanca : Sacos",
+            "Cebolla morada : Sacos",
+            "Cebolleta china : Uds",
+            "Ajo morado : Sacos",
+            "Puerro : Uds",
+            "Zanahorias : Kg",
+            "Berenjena : Uds",
+            "Pimiento verde : Uds",
+            "Pimiento rojo : Uds",
+            "Pimiento padrón : Kg",
+            "Tomate pera : Kg",
+            "Tomate cherry : Kg",
+            "Tomate extra : Kg",
+            "Naranja de zumo : Cajas",
+            "Lima : Cajas",
+            "Limón amarillo : Cajas",
+            "Uvas : Kg",
+            "Plátano : Uds",
+            "Piña : Uds",
+            "Aguacate : Uds",
+            "Cebollino : Uds",
+            "Cilantro : g",
+            "Rúcula : g",
+            "Micromezclum : g",
+            "Champiñón : g",
+            "Lechuga batavia : Uds",
+            "Lechuga de hoja de roble : Uds",
+            "Garbanzos crudos : Kg",
+            "Lentejas : Kg",
+            "Berza : Kg",
+            "Nabos : Kg",
+            "Perejil : g"
+        ]
+    },
+    "Makro":{
+        "Teléfono":["983456319", "620284487"],
+        "Productos":[
+            "Granola con chocolate Aro : Paquetes",
+            "Pan de molde blanco : 11x11",
+            "Tortilla de trigo : Paquetes",
+            "Pasta : Paquetes",
+            "Fideos : Paquetes",
+            "Arroz : 5kg",
+            "Tortilla de maíz 15cm : Paquetes",
+            "Almendra cruda : Paquetes",
+            "Pipas de calabaza : Paquetes",
+            "Pipas de girasol : Paquetes",
+            "Pasas : Kg",
+            "Nueces : Kg",
+            "Guacamole : Kg",
+            "Garbanzos cocidos : Lata",
+            "Tomate doble concentrado : Uds",
+            "Jalapeños : Botes",
+            "Yondu : Botes",
+            "Caldo de carne : Botes",
+            "Caldo de pollo : Botes",
+            "Caldo de pescado : Botes",
+            "Queso cheddar en barra La Fuente : Uds",
+            "Tequeños de gouda : Paquetes",
+            "Harina sin gluten : Kg",
+            "Azúcar moreno : Kg",
+            "Azúcar glass : Kg",
+            "Miel : Botes",
+            "Dulce de leche : Botes",
+            "Topping de dulce de leche : Botes",
+            "Sal fina : 5kg",
+            "Sal en escamas : Kg",
+            "Pimentón picante : Botes",
+            "Pimentón dulce de la Vera : Botes",
+            "Orégano : Botes",
+            "Romero : Botes",
+            "Tomillo seco : Botes",
+            "Laurel : Botes",
+            "Cayena : Botes",
+            "Pimienta : Botes",
+            "Chipotle : Botes",
+            "Salsa BBQ Coosur : Botes",
+            "Ketchup : Botes",
+            "Mostaza antigua : Botes",
+            "Mostaza : Botes",
+            "Vinagre de Jerez : Botella",
+            "Galleta María : Paquetes",
+            "Galleta lotus : Paquetes",
+            "Magdalena sin gluten : Paquetes",
+            "Mantequilla monodosis : Cajas",
+            "Mermelada monodosis : Cajas",
+            "Impulsor o levadura : Paquetes",
+            "Vino amontillado : Botellas",
+            "Vino blanco : 5l",
+            "Brandy : Botellas",
+            "Vino fino : Botellas",
+            "Leche Aro : Cajas",
+            "Agua con gas : Botellas",
+            "Papel de horno : Rollos",
+            "Papel de aluminio : Rollos",
+            "Cargas de sifón : Botellas",
+            "Brochetas 15cm : Paquetes 200u",
+            "Brocheta roja : Paquetes",
+            "Canela en rama : Botes 150g",
+            "Leche condensada : Botes",
+            "Zitron zumo concentrado lima : Cajas 2l",
+            "Chapatón : Uds",
+            "Citronella : Botes",
+            "Tartufata : Paquetes 500g",
+            "Crema American Burger Heinz : Botes",
+            "Cobertura chocolate blanco : Botes",
+            "Cacao en polvo : Botes",
+            "Cobertura chocolate negro : Botes",
+            "Rollo de film : Rollos",
+            "Pajitas de colores 8mm : Botes",
+            "Fairy : Cajas"
+        ]
+    },
+    "Tudis":{
+        "Teléfono":"671668523",
+        "Productos":[
+            "Mayonesa Tudis (promoción) : Botes 5l",
+            "Pluma armuñesa : Cajas 8Kg",
+            "Oreja cocida : Cajas 5x3/4 Uds",
+            "Dulce de bacon : Paquetes",
+            "Dulce de cecina : Paquetes",
+            "Anchoa de gilda : Botes",
+            "Alitas misisipi : Cajas",
+            "Frutos rojos congelados : Cajas 10x1Kg",
+            "Pulled pork : Paquetes",
+            "Nata KEN gourmet duo : Cajas 12x1l",
+            "Yogurt : Botes 3,5kg",
+            "Salsa baconesa : Botes",
+            "Salsa cheddar : Botes",
+            "Pan baguel : Paquetes",
+            "Merluza rellena de puerro y gambas : Cajas",
+            "Trucha menú : Uds",
+            "Bacaladilla menú : Uds",
+            "Pan mini burguer : Paquetes",
+            "Maizena express clara : Cajas 6x1Kg",
+            "Maizena express oscura : Cajas 6x1Kg",
+            "Lubina : Cajas 4Kg",
+            "Maizena normal : Kg"
+        ]
+    },
+    "Carnicero Olivares":{
+        "Teléfono":"619300372",
+        "Productos":[
+            "Filetes de cachopo : Kg",
+            "Pechuga en tiras : Kg",
+            "Picaña : Kg",
+            "Muslos y contramuslos de pollo : Kg"
+        ]
+    },
+    "Alondra":{
+        "Teléfono":"669283068",
+        "Productos":[
+            "Boquerones en mariposa : Latas"
+        ]
+    },
+    "Merimar":{
+        "Teléfono":"607498030",
+        "Productos":[
+            "Merluza volanta : Uds",
+            "Salmón menú fin de semana : Cajas"
+        ]
+    },
+    "Sipal":{
+        "Teléfono":"679962232",
+        "Productos":[
+            "Morena de pistacho : Paquetes"
+        ]
+    },
+    "Palenzuela":{
+        "Teléfono":"636383329",
+        "Productos":[
+            "Queso crema : Botes",
+            "Puré de mango : Botes",
+            "Mantequilla : Paquetes",
+            "Queso feta : Paquetes",
+            "Piquillos : Latas 5kg",
+            "Tomate frito : Latas grandes",
+            "Mozzarella rayada : Bolsas",
+            "Parmesano en polvo : Bolsas",
+            "Queso sándwich : Paquetes",
+            "Queso azul en migas : Paquetes",
+            "Queso gouda ahumado : Paquetes"
+        ]
+    },
+    "El mar":{
+        "Teléfono":"663701421",
+        "Productos":[
+            "Gambón pelado : Cajas",
+            "Periquito (gambas) : Cajas",
+            "Vaina de pota (calamar) : Cajas"
+        ]
+    },
+    "Patatas Meléndez":{
+        "Teléfono":"686660813",
+        "Productos":[
+            "Patata de freír : Sacos 5kg",
+            "Patata roja de cocer : Sacos"
+        ]
+    },
+    "Doña Tomasa":{
+        "Teléfono":"608313149",
+        "Productos":[
+            "Boquerones en vinagre : Latas"
+        ]
+    },
+    "Gourmetpan":{
+        "Teléfono":"685860066",
+        "Productos":[
+            "Kimchie : Botes",
+            "Mayonesa kewpie : Botes",
+            "Salmorreta : Botes",
+            "Salmón ahumado : Kg",
+            "Cargas de soplete : Uds",
+            "Gochujang : Botes",
+            "Salsa de soja : Botes",
+            "Panko : Kg"
+        ]
+    },
+    "Nutralid":{
+        "Teléfono":["692118414", "675730363"],
+        "Productos":[
+            "Croissant : Cajas de 40 uds",
+            "Crujiente gourmet express (piripi) : Cajas 100udsx70g",
+            "Payesitos : Cajas 96udsx80g",
+            "Baguette : Uds",
+            "Donuts de caramelo : Cajas",
+            "Mollete : Cajas 90udsx70g",
+            "Panecillo sin gluten : Cajas 25x105g"
+        ]
+    },
+    "Eresma (Ana)":{
+        "Teléfono":"676977725",
+        "Productos":[
+            "Paleta (desayuno) : Paquetes 3kg"
+        ]
+    },
+    "Fadis":{
+        "Teléfono":"667764925",
+        "Productos":[
+            "Mantequilla clarificada : Botes",
+            "Torreznos carta : Paquetes",
+            "Torreznos Crema : Paquetes",
+            "Rulo de cabra : Paquetes",
+            "Lacón : Paquetes",
+            "Bacon : Paquetes"
+        ]
+    },
+    "Ajá":{
+        "Teléfono":"655877056",
+        "Productos":[
+            "Alcachofas : Botes",
+            "Migas de atún : Latas",
+            "Lata de ventresca : Uds",
+            "Helado de vainilla : Botes",
+            "Sésamo negro : Botes",
+            "Pan brioche para torrijas : Kg",
+            "Harina de trigo : Kg",
+            "Comino : Botes",
+            "Ajo granulado : Botes",
+            "Helado fresa-vainilla-chocolate : Botes",
+            "Helado KitKat : Botes",
+            "Helado Oreo : Botes",
+            "Helado Milka : Botes"
+        ]
+    },
+    "Huevos de la abuela":{
+        "Teléfono":"605353184",
+        "Productos":[
+            "Huevos camperos : Cajas"
+        ]
+    },
+    "Ana Valdestillas":{
+        "Teléfono":"615937717",
+        "Productos":[
+            "Pan de burguer : Unidades"
+        ]
+    },
+    "Olibher":{
+        "Teléfono":"635724690",
+        "Productos":[
+            "Aceitunas rellenas de anchoa : Latas",
+            "Pepinillos : Botes",
+            "Piparras : Botes"
+        ]
+    },
+    "Ecocyl":{
+        "Teléfono":"627583287",
+        "Productos":[
+            "Aceite de oliva 0,4º : Cajas",
+            "Aceite de girasol : Botellas",
+            "Aceite virgen extra : Botellas",
+            "Aceite freidora : Botellas"
+        ]
+    },
+    "Valdecuevas":{
+        "Teléfono":"678215704",
+        "Productos":[
+            "Aceite de arbequina : Cajas"
+        ]
+    },
+    "Mannix (Gemma)":{
+        "Teléfono":"-",
+        "Productos":[
+            "Carne picada : Kg"
+        ]
+    },
+    "Cárnicas Gutiérrez":{
+        "Teléfono":"696465154",
+        "Productos":[
+            "Costilla adobada : Kg",
+            "Panceta : Kg",
+            "Gallina : Kg",
+            "Espinazo : Kg",
+            "Hueso de jamón : Kg",
+            "Morcillo : Kg",
+            "Chorizo : Kg",
+            "Hueso blanco : Kg",
+            "Morcillas : Kg",
+            "Tocino : Kg",
+            "Chorizo : Kg",
+            "Falda sin hueso : Kg",
+            "Jijas : Kg"
+        ]
+    },
+    "Arcecarne (Gemma)":{
+        "Teléfono":"-",
+        "Productos":[
+            "Burguer Crema : Paquetes 8uds"
+        ]
+    },
+    "Servifood":{
+        "Teléfono":"607476086",
+        "Productos":[
+            "Jamón york desayuno : Kg",
+            "Brócoli : Kg",
+            "Secreto : Kg",
+            "Solomillo : Kg",
+            "Setas congeladas : Bolsas",
+            "Patatas Crema : Kg",
+            "Lomo al ajillo : Kg",
+            "Pimiento relleno de bacalao : Cajas",
+            "Vaina de pota (calamar) : Kg"
+        ]
+    },
+    "Limpieza Efihigiene":{
+        "Teléfono":"672286119",
+        "Productos":[
+            "Esponjas : Paquetes",
+            "Bayetas : Paquetes",
+            "Friegasuelos : Botellas",
+            "Guantes Negros : Paquetes",
+            "Papel de plata : Rollos",
+            "Papel de baño : Rollos",
+            "Papel de manos : Rollos",
+            "Fregonas : Uds",
+            "Escobas : Uds",
+            "Desengrasante normal : Botellas",
+            "Desengrasante plancha : Botellas",
+            "Bolsas de basura grandes : Cajas",
+            "Bolsas de basura pequeñas : Cajas",
+            "Bolsas de vacío : Paquetes",
+            "Paños de cocina : Paquetes",
+            "Lejía : Botellas",
+            "Papel de cocina : Paquetes"
+        ]
+    },
+    "Distribuciones Puerto":{
+        "Teléfono":"647414102",
+        "Productos":[
+            "Tupers ovalados : Uds",
+            "Tupers redondos : Uds",
+            "Tupers transparentes : Uds",
+            "Tarrina de salsas : Uds",
+            "Bolsas de asas : Paquetes",
+            "Conchas negras Crema : Uds",
+            "Bolsas de papel Crema : Paquetes",
+            "Bolsas de papel blanco : Paquetes",
+            "Sobres negros Crema : Paquetes",
+            "Tarrinas de patatas Crema : Uds",
+            "Servilletas Crema : Paquetes",
+            "Papel serigrafiado Crema : Uds",
+            "Pajitas granizado  : x6Uds"
+        ]
+    },
+    "Angulas Aguinaga":{
+        "Teléfono":"902495000",
+        "Productos":["Merluza volanta : Paquetes 2-3kg",
+            "Salmón limpio : Paquetes 5-6kg"]
+    },
+    "Blanco Gastronomía":{
+        "Teléfono":"983396877",
+        "Productos":[
+            "Boqueron en aceite : Caja 10x500g"
+        ]
+    }
+}
