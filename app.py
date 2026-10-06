@@ -3,11 +3,11 @@ from google.cloud.firestore_v1.base_document import DocumentSnapshot
 import streamlit as st
 from servicios.firestore_client import get_db
 from servicios.auth import login_user, register_user, hash_password
-from paginas.pedidos import PaginaPedidos as pp
 import json
 from google.cloud.firestore import Client
 
 def main():
+    from paginas.pedidos import PaginaPedidos as pp
     st.set_page_config(page_title="Pedidos e Inventario Lucense", 
                     layout="wide",
                     page_icon="./LOGO-LUCENSE_COMPLETO.webp")

@@ -1,12 +1,12 @@
 import streamlit as st
 from servicios.creador_pdf import generar_pdf_pedido
-from servicios.mods import Modulares as mm
 from datetime import datetime
 
 class PaginaPedidos():
     
     @st.fragment(key="render_resumen_pedido")
     def render_resumen_pedido():
+        
         st.sidebar.header("📋 Pedido Actual")
         if st.session_state.pedido:
             if st.sidebar.button("🗑️ Borrar lista"):
@@ -28,6 +28,7 @@ class PaginaPedidos():
             st.sidebar.info('Pedido vacío')    
 
     def llamada_agregar_producto(prov: str, producto: str, presentacion: str):
+
         cant_prod: int = st.session_state.get(f"cantidad_{prov}_{producto}", 0)
         id_item = f'{prov} - {presentacion} - {producto}'
 
@@ -44,6 +45,7 @@ class PaginaPedidos():
         st.rerun(scope="render_resumen_pedido")
 
     def llamada_borrar_producto(prov: str, producto: str):
+
         id_item = f'{prov} - {producto}'
         if id_item in st.session_state.pedido:
             st.session_state.pedido.pop(id_item)
@@ -51,6 +53,8 @@ class PaginaPedidos():
         st.rerun(scope="render_resumen_pedido")
 
     def pagina_pedidos(datos: dict[str, dict[str, dict[str, str] | str] | list[str] | str]):
+
+        from servicios.mods import Modulares as mm
         col_titulo, col_buscar = st.columns([3,2])
         with col_titulo:
             st.title("🛒 Hacer pedido")

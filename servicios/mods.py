@@ -1,8 +1,9 @@
 import streamlit as st
-from paginas.pedidos import PaginaPedidos as pp
 
 class Modulares():
     def producto_btn_cantidad(prov: str, producto: str, presentacion: str, inventario: bool=False):
+        
+        from paginas.pedidos import PaginaPedidos as pp
         col_nombre, col_cantidad, col_btn = st.columns([2,1,1])
 
         with col_nombre:
