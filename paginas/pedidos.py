@@ -1,6 +1,6 @@
 import streamlit as st
 from servicios.creador_pdf import generar_pdf_pedido
-from ..servicios.mods import Modulares as mm
+from servicios.mods import Modulares as mm
 from datetime import datetime
 
 class PaginaPedidos():

@@ -1,5 +1,5 @@
 import streamlit as st
-from ..paginas.pedidos import PaginaPedidos as pp
+from paginas.pedidos import PaginaPedidos as pp
 
 class Modulares():
     def producto_btn_cantidad(prov: str, producto: str, presentacion: str, inventario: bool=False):
