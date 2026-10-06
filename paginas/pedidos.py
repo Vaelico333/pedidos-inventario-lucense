@@ -6,7 +6,7 @@ class PaginaPedidos():
     
     @st.fragment(key="render_resumen_pedido")
     def render_resumen_pedido():
-        
+
         st.sidebar.header("📋 Pedido Actual")
         if st.session_state.pedido:
             if st.sidebar.button("🗑️ Borrar lista"):
@@ -55,7 +55,8 @@ class PaginaPedidos():
     def pagina_pedidos(datos: dict[str, dict[str, dict[str, str] | str] | list[str] | str]):
 
         from servicios.mods import Modulares as mm
-        col_titulo, col_buscar = st.columns([3,2])
+        PaginaPedidos.render_resumen_pedido()
+        col_titulo, col_buscar = st.columns(2)
         with col_titulo:
             st.title("🛒 Hacer pedido")
         with col_buscar:
