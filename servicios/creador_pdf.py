@@ -86,8 +86,15 @@ def generar_pdf_pedido(pedido_dict: dict[str, int]) -> io.BytesIO:
         ])
 
     # 6. Crear la Tabla y darle diseño visual
-    # Anchos de columnas proporcionales (total aproximado de la página: 530 puntos)
-    tabla_pedido = Table(datos_tabla, colWidths=[180, 230, 120])
+    tabla_pedido = Table(
+        datos_tabla,
+        colWidths=[
+            doc.width * 0.22,
+            doc.width * 0.23,
+            doc.width * 0.39,
+            doc.width * 0.16,
+        ],
+    )
     
     diseno_tabla = TableStyle([
         ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor("#1A365D")), # Color fondo cabecera
