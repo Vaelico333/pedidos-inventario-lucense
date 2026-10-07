@@ -69,7 +69,7 @@ def generar_pdf_pedido(pedido_dict: dict[str, int]) -> io.BytesIO:
     datos_tabla: list[list[reportlab.platypus.paragraph.Paragraph]] = [[
         Paragraph("<b>Proveedor</b>", style_cabecera_tabla), 
         Paragraph("<b>Producto</b>", style_cabecera_tabla), 
-        Paragraph("<b>Cantidad Pedida</b>", style_cabecera_tabla)
+        Paragraph("<b>Cantidad Pedida</b>", style_cabecera_tabla),
         Paragraph("<b>Presentación</b>", style_cabecera_tabla), 
     ]]
     
