@@ -68,9 +68,9 @@ def generar_pdf_pedido(pedido_dict: dict[str, int]) -> io.BytesIO:
     # Definimos las columnas: [Proveedor, Producto, Cantidad]
     datos_tabla: list[list[reportlab.platypus.paragraph.Paragraph]] = [[
         Paragraph("<b>Proveedor</b>", style_cabecera_tabla), 
-        Paragraph("<b>Presentación</b>", style_cabecera_tabla), 
         Paragraph("<b>Producto</b>", style_cabecera_tabla), 
         Paragraph("<b>Cantidad Pedida</b>", style_cabecera_tabla)
+        Paragraph("<b>Presentación</b>", style_cabecera_tabla), 
     ]]
     
     for item, cantidad in pedido_dict.items():
@@ -80,9 +80,9 @@ def generar_pdf_pedido(pedido_dict: dict[str, int]) -> io.BytesIO:
             
         datos_tabla.append([
             Paragraph(prov, style_texto),
-            Paragraph(pres, style_texto),
             Paragraph(prod, style_texto),
-            Paragraph(f"<b>{cantidad} uds</b>", style_texto)
+            Paragraph(cantidad, style_texto)
+            Paragraph(pres, style_texto),
         ])
 
     # 6. Crear la Tabla y darle diseño visual
