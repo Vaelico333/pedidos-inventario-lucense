@@ -52,7 +52,7 @@ def generar_pdf_pedido(pedido_dict: dict[str, int]) -> io.BytesIO:
     else:
         # Si por algún motivo no encuentra el logo, coloca un título de texto alternativo
         p_titulo_alt = Paragraph("📋 Borrador de Pedido - Bar Lucense", style_titulo)
-        tabla_cabecera = Table([[p_titulo_alt, p_titulo]], colWidths=[200, 330])
+        tabla_cabecera = Table([[p_titulo_alt, p_titulo]])
     tabla_cabecera.setStyle(TableStyle([
         ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
         ('LEFTPADDING', (0, 0), (-1, -1), 0),
