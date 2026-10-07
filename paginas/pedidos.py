@@ -60,7 +60,7 @@ class PaginaPedidos():
         with col_titulo:
             st.title("🛒 Hacer pedido")
         with col_buscar:
-            col_input, col_btn = st.columns(2)
+            col_input, col_btn = st.columns(2, vertical_alignment="center")
             with col_input:
                 st.text_input(label="", placeholder="Introduce un producto o proveedor", key="texto-buscar")
             with col_btn:
