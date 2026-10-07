@@ -2,15 +2,15 @@ import streamlit as st
 
 class Modulares():
     def producto_btn_cantidad(prov: str, producto: str, presentacion: str, inventario: bool=False):
-        
+
         from paginas.pedidos import PaginaPedidos as pp
-        col_nombre, col_cantidad, col_btn = st.columns([2,1,1])
+        col_nombre, col_cantidad, col_btn = st.columns([2,1,1], vertical_alignment="center")
 
         with col_nombre:
             st.subheader(f'{producto}')
             st.markdown(f'**{presentacion}**')
         with col_cantidad:
-            st.number_input('Cantidad', step=1, on_change="ignore", key=f"cantidad_{prov}_{producto}",label_visibility='collapsed')
+            st.number_input('Cantidad', step=0.01, on_change="ignore", key=f"cantidad_{prov}_{producto}",label_visibility='collapsed')
         with col_btn:
             if not inventario:
                 st.button('Añadir al pedido', key=f'btn_{prov}_{producto}', use_container_width=True, on_click=pp.llamada_agregar_producto, args=(prov, producto, presentacion))

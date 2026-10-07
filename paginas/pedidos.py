@@ -60,9 +60,9 @@ class PaginaPedidos():
         with col_titulo:
             st.title("🛒 Hacer pedido")
         with col_buscar:
-            col_input, col_btn = st.columns(2, border=True)
+            col_input, col_btn = st.columns(2)
             with col_input:
-                st.text_input("Introduce un producto o proveedor", key="texto-buscar")
+                st.text_input(placeholder="Introduce un producto o proveedor", key="texto-buscar")
             with col_btn:
                 st.button("🔎 Buscar", key="btn-buscar")
         for prov in datos.keys():

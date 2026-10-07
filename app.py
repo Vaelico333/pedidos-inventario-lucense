@@ -10,7 +10,7 @@ def main():
     from paginas.pedidos import PaginaPedidos as pp
     st.set_page_config(page_title="Pedidos e Inventario Lucense", 
                     layout="wide",
-                    page_icon="./LOGO-LUCENSE_COMPLETO.webp")
+                    page_icon="./img/LOGO-LUCENSE_COMPLETO.webp")
 
     # Carga de la base de datos
     if "db" not in st.session_state:

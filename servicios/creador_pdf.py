@@ -48,7 +48,7 @@ def generar_pdf_pedido(pedido_dict: dict[str, int]) -> io.BytesIO:
     ruta_logo = './img/LOGO-LUCENSE_COMPLETO.webp'
     if os.path.exists(ruta_logo):
         logo_pdf = Image(ruta_logo, width=108, height=54)
-        tabla_cabecera = Table([[logo_pdf, p_titulo]], colWidths=[140, 390])
+        tabla_cabecera = Table([[logo_pdf, p_titulo]])
     else:
         # Si por algún motivo no encuentra el logo, coloca un título de texto alternativo
         p_titulo_alt = Paragraph("📋 Borrador de Pedido - Bar Lucense", style_titulo)
@@ -68,8 +68,8 @@ def generar_pdf_pedido(pedido_dict: dict[str, int]) -> io.BytesIO:
     # Definimos las columnas: [Proveedor, Producto, Cantidad]
     datos_tabla: list[list[reportlab.platypus.paragraph.Paragraph]] = [[
         Paragraph("<b>Proveedor</b>", style_cabecera_tabla), 
-        Paragraph("<b>Producto</b>", style_cabecera_tabla), 
         Paragraph("<b>Presentación</b>", style_cabecera_tabla), 
+        Paragraph("<b>Producto</b>", style_cabecera_tabla), 
         Paragraph("<b>Cantidad Pedida</b>", style_cabecera_tabla)
     ]]
     
