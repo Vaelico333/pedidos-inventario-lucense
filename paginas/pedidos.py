@@ -29,10 +29,10 @@ class PaginaPedidos():
 
     def llamada_agregar_producto(prov: str, producto: str, presentacion: str):
 
-        cant_prod: int = st.session_state.get(f"cantidad_{prov}_{producto}", 0)
+        cant_prod: float = st.session_state.get(f"cantidad_{prov}_{producto}", 0)
         id_item = f'{prov} - {presentacion} - {producto}'
 
-        cantidad_final = st.session_state.pedido.get(id_item, 0) + cant_prod
+        cantidad_final = st.session_state.pedido.get(id_item, 0) + str(cant_prod)
         if cantidad_final > 0:
             st.session_state.pedido[id_item] = st.session_state.pedido.get(id_item, 0) + cant_prod
             st.toast(f'{prov}: {cant_prod} x {producto} añadido al pedido', icon="➕")
