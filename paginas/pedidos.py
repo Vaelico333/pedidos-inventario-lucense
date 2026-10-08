@@ -52,6 +52,7 @@ class PaginaPedidos():
             st.toast(f'{producto} de {prov} retirado de la lista con éxito', icon="🗑️")
         st.rerun(scope="render_resumen_pedido")
 
+    @st.fragment(key="pedidos")
     def pagina_pedidos(datos: dict[str, dict[str, dict[str, str] | str] | list[str] | str]):
 
         from servicios.mods import Modulares as mm
@@ -71,7 +72,9 @@ class PaginaPedidos():
                             if isinstance(info, dict):
                                 for prod, pres in info.items():
                                     if buscar.lower() in prod.lower():
+                                        st.toast(f'{prod} encontrado')
                                         encontrado += 1
+                                        st.rerun(scope="fragment")
                                         mm.producto_btn_cantidad(prov, prod, pres)
                     if not encontrado:
                         st.warning('Producto no encontrado')
