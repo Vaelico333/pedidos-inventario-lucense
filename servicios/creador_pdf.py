@@ -81,7 +81,7 @@ def generar_pdf_pedido(pedido_dict: dict[str, int]) -> io.BytesIO:
         datos_tabla.append([
             Paragraph(prov, style_texto),
             Paragraph(prod, style_texto),
-            Paragraph(cantidad, style_texto),
+            Paragraph(str(cantidad), style_texto),
             Paragraph(pres, style_texto),
         ])
 
