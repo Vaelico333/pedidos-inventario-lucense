@@ -18,7 +18,7 @@ class Modulares():
             else:
                 # Implementar lógica de inventario
                 pass
-        "---"
+        st.divider()
 
     @st.fragment
     def render_bloque_proveedor(prov: str, datos_prov: dict[str, dict[str, str] | str] | list[str]):
@@ -37,7 +37,7 @@ class Modulares():
                 for tele in tlf:
                     tlfs += f'{tele} '
                 st.title(tlfs)
-        "---"
+        st.divider()
         lista_productos: dict[str, str] = datos_prov['Productos']
         for prod, presentacion in lista_productos.items():
             Modulares.producto_btn_cantidad(prov=prov, producto=prod, presentacion=presentacion)
