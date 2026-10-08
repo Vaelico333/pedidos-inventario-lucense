@@ -32,7 +32,7 @@ class PaginaPedidos():
         cant_prod: float = st.session_state.get(f"cantidad_{prov}_{producto}", 0)
         id_item = f'{prov} - {presentacion} - {producto}'
 
-        cantidad_final = st.session_state.pedido.get(id_item, 0) + str(cant_prod)
+        cantidad_final = st.session_state.pedido.get(id_item, 0) + cant_prod
         if cantidad_final > 0:
             st.session_state.pedido[id_item] = st.session_state.pedido.get(id_item, 0) + cant_prod
             st.toast(f'{prov}: {cant_prod} x {producto} añadido al pedido', icon="➕")
@@ -62,9 +62,19 @@ class PaginaPedidos():
         with col_buscar:
             col_input, col_btn = st.columns(2, vertical_alignment="center")
             with col_input:
-                st.text_input(label="", placeholder="Introduce un producto o proveedor", key="texto-buscar")
+                buscar = st.text_input(label="", placeholder="Introduce un producto", key="texto-buscar")
             with col_btn:
-                st.button("🔎 Buscar", key="btn-buscar")
+                if st.button("🔎 Buscar", key="btn-buscar"):
+                    encontrado = False
+                    for prov, cats in datos.items():
+                        for cat, info in cats.items():
+                            if isinstance(info, dict):
+                                for prod, pres in info.items():
+                                    if buscar.lower() in prod.lower():
+                                        encontrado += 1
+                                        mm.producto_btn_cantidad(prov, prod, pres)
+                    if not encontrado:
+                        st.warning('Producto no encontrado')
         for prov in datos.keys():
             with st.expander(prov, key=f'expander_{prov}'):
                 mm.render_bloque_proveedor(prov, datos[prov])
