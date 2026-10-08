@@ -74,7 +74,6 @@ class PaginaPedidos():
                                     if buscar.lower() in prod.lower():
                                         st.toast(f'{prod} encontrado')
                                         encontrado += 1
-                                        st.rerun(scope="fragment")
                                         mm.producto_btn_cantidad(prov, prod, pres)
                     if not encontrado:
                         st.warning('Producto no encontrado')
