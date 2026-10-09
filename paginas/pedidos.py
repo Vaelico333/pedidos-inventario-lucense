@@ -58,7 +58,6 @@ class PaginaPedidos():
             st.toast(f'{producto} de {prov} retirado de la lista con éxito', icon="🗑️")
         st.rerun(scope="render_resumen_pedido")
 
-    @st.fragment(key="pedidos")
     def pagina_pedidos(datos: dict[str, dict[str, dict[str, str] | str] | list[str] | str]):
 
         from servicios.mods import Modulares as mm
@@ -68,11 +67,12 @@ class PaginaPedidos():
         with col_titulo:
             st.title("🛒 Hacer pedido")
         with col_buscar:
-            col_input, col_btn = st.columns(2, vertical_alignment="center")
-            with col_input:
-                buscar = st.text_input(label="", placeholder="Introduce un producto", key="texto-buscar")
-            with col_btn:
-                btn_buscar = st.button("🔎 Buscar", key="btn-buscar")
+            with st.form(key="form_buscar_productos"):
+                col_input, col_btn = st.columns(2, vertical_alignment="center")
+                with col_input:
+                    buscar = st.text_input(label="", placeholder="Introduce un producto", key="texto-buscar")
+                with col_btn:
+                    btn_buscar = st.form_submit_button("🔎 Buscar")
         if btn_buscar:
             encontrado = False
             for prov, cats in datos.items():
