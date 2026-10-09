@@ -65,16 +65,17 @@ class PaginaPedidos():
             with col_input:
                 buscar = st.text_input(label="", placeholder="Introduce un producto", key="texto-buscar")
             with col_btn:
-                if st.button("🔎 Buscar", key="btn-buscar"):
-                    encontrado = False
-                    for prov, cats in datos.items():
-                        for cat, info in cats.items():
-                            if isinstance(info, dict):
-                                for prod, pres in info.items():
-                                    if buscar.lower() in prod.lower():
-                                        st.toast(f'{prod} encontrado')
-                                        encontrado += 1
-                                        mm.producto_btn_cantidad(prov, prod, pres)
+                btn_buscar = st.button("🔎 Buscar", key="btn-buscar")
+        if btn_buscar:
+            encontrado = False
+            for prov, cats in datos.items():
+                for cat, info in cats.items():
+                    if isinstance(info, dict):
+                        for prod, pres in info.items():
+                            if buscar.lower() in prod.lower():
+                                st.toast(f'{prod} encontrado')
+                                encontrado += 1
+                                mm.buscar(prov, prod, pres)
                     if not encontrado:
                         st.warning('Producto no encontrado')
         for prov in datos.keys():

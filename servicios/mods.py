@@ -51,6 +51,22 @@ class Modulares():
             st.warning(st.session_state.mensaje_warning)
             del st.session_state.mensaje_warning
         
-        def buscar():
-            pass
+    def buscar(prov, producto, presentacion, inventario =False):
+
+        from paginas.pedidos import PaginaPedidos as pp
+        col_nombre, col_cantidad, col_btn = st.columns([2,1,1], vertical_alignment="center")
+
+        with col_nombre:
+            st.subheader(f'{producto}')
+            st.markdown(f'**{presentacion}**')
+        with col_cantidad:
+            st.number_input('Cantidad', step=0.01, on_change="ignore", key=f"cantidad_{prov}_{producto}",label_visibility='collapsed')
+        with col_btn:
+            if not inventario:
+                st.button('Añadir al pedido', key=f'btn_buscar_{prov}_{producto}', use_container_width=True, on_click=pp.llamada_agregar_producto, args=(prov, producto, presentacion))
+                st.button('Borrar de la lista', key=f'btn_borrar_buscar_{prov}_{producto}', use_container_width=True, on_click=pp.llamada_borrar_producto, args=(prov, producto))
+            else:
+                # Implementar lógica de inventario
+                pass
+        st.divider()
 
