@@ -1,3 +1,4 @@
+from typing import Any
 import streamlit as st
 from servicios.creador_pdf import generar_pdf_pedido
 from datetime import datetime
@@ -5,18 +6,23 @@ from datetime import datetime
 class PaginaPedidos():
     
     @st.fragment(key="render_resumen_pedido")
-    def render_resumen_pedido():
+    def render_resumen_pedido(proveedores: list):
 
         st.sidebar.header("📋 Pedido Actual")
         if st.session_state.pedido:
             if st.sidebar.button("🗑️ Borrar lista"):
                 st.session_state.pedido.clear()
-            col_txt, col_borrar = st.columns(2)
+            col_txt, col_borrar = st.columns([1,1])
+            prov_dict: dict[str, list] = dict.fromkeys(proveedores,[])
             for item, cantidad in list(st.session_state.pedido.items()):
+                prov, pres, prod = item.split('-', 2)
+                prov_dict[prov].append(f"✅ **{cantidad}x** {pres} de {prod}")
                 with col_txt:
-                        st.sidebar.markdown(f"🔹 **{cantidad}x** {item}")
+                    for p in prov_dict.keys():
+                        [st.title(p) if prov_dict[p]]
+                        [st.markdown(i) for i in prov_dict[p] if prov_dict[p]]
                 with col_borrar:
-                    if st.sidebar.button("✖️", key=f'btn_borrar_{item}'):
+                    if st.sidebar.button("✖️", key=f'btn_borrar_{prod}'):
                         st.session_state.pedido.pop(item)
                         st.rerun(scope="fragment")
             st.divider()
@@ -56,7 +62,8 @@ class PaginaPedidos():
     def pagina_pedidos(datos: dict[str, dict[str, dict[str, str] | str] | list[str] | str]):
 
         from servicios.mods import Modulares as mm
-        PaginaPedidos.render_resumen_pedido()
+        prov = list(datos.keys())
+        PaginaPedidos.render_resumen_pedido(prov)
         col_titulo, col_buscar = st.columns(2)
         with col_titulo:
             st.title("🛒 Hacer pedido")
@@ -76,8 +83,10 @@ class PaginaPedidos():
                                 st.toast(f'{prod} encontrado')
                                 encontrado += 1
                                 mm.buscar(prov, prod, pres)
-                    if not encontrado:
-                        st.warning('Producto no encontrado')
+            if not encontrado:
+                st.warning('Producto no encontrado')
+            else:
+                st.warning(f'Encontrados {encontrado} productos.')
         for prov in datos.keys():
             with st.expander(prov, key=f'expander_{prov}'):
                 mm.render_bloque_proveedor(prov, datos[prov])
