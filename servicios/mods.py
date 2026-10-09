@@ -60,7 +60,7 @@ class Modulares():
             st.subheader(f'{producto}')
             st.markdown(f'**{presentacion}**')
         with col_cantidad:
-            st.number_input('Cantidad', step=0.01, on_change="ignore", key=f"cantidad_{prov}_{producto}",label_visibility='collapsed')
+            st.number_input('Cantidad', step=0.01, on_change="ignore", key=f"cantidad_buscar_{prov}_{producto}",label_visibility='collapsed')
         with col_btn:
             if not inventario:
                 st.button('Añadir al pedido', key=f'btn_buscar_{prov}_{producto}', use_container_width=True, on_click=pp.llamada_agregar_producto, args=(prov, producto, presentacion))
@@ -69,4 +69,3 @@ class Modulares():
                 # Implementar lógica de inventario
                 pass
         st.divider()
-
