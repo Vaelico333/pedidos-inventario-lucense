@@ -22,9 +22,7 @@ class PaginaPedidos():
                         [st.title(p) if prov_dict[p]]
                         [st.markdown(i) for i in prov_dict[p] if prov_dict[p]]
                 with col_borrar:
-                    if st.sidebar.button("✖️", key=f'btn_borrar_{prod}'):
-                        st.session_state.pedido.pop(item)
-                        st.rerun(scope="fragment")
+                    st.sidebar.button("✖️", key=f'btn_borrar_{prod}',on_click=PaginaPedidos.llamada_borrar_producto, args=(prov, prod))
             st.divider()
             datos_pdf = generar_pdf_pedido(st.session_state.pedido)
             fecha = datetime.now().strftime('%d/%m/%Y')
