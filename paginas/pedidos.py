@@ -16,14 +16,15 @@ class PaginaPedidos():
             prov_dict: dict[str, list[str]] = dict.fromkeys(proveedores,[])
             for item, cantidad in list(st.session_state.pedido.items()):
                 prov, pres, prod = item.split('-', 2)
-                prov_dict[prov].append(f"✅ **{cantidad}x** {pres} de {prod}")
-                with col_txt:
-                    for p in prov_dict.keys():
-                        if prov_dict[p]:
-                            st.title(p) 
-                            [st.markdown(i) for i in prov_dict[p]]
-                with col_borrar:
-                    st.sidebar.button("✖️", key=f'btn_borrar_{prod}',on_click=PaginaPedidos.llamada_borrar_producto, args=(prov, prod))
+                if prov in prov_dict.keys():
+                    prov_dict[prov].append(f"✅ **{cantidad}x** {pres} de {prod}")
+                    with col_txt:
+                        for p in prov_dict.keys():
+                            if prov_dict[p]:
+                                st.title(p) 
+                                [st.markdown(i) for i in prov_dict[p]]
+                    with col_borrar:
+                        st.sidebar.button("✖️", key=f'btn_borrar_{prod}',on_click=PaginaPedidos.llamada_borrar_producto, args=(prov, prod))
             st.divider()
             datos_pdf = generar_pdf_pedido(st.session_state.pedido)
             fecha = datetime.now().strftime('%d/%m/%Y')
