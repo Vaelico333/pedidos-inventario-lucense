@@ -7,6 +7,7 @@ import json
 from google.cloud.firestore import Client
 
 def main():
+
     from paginas.pedidos import PaginaPedidos as pp
     st.set_page_config(page_title="Pedidos e Inventario Lucense", 
                     layout="wide",
@@ -130,3 +131,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+else:
+    pass
