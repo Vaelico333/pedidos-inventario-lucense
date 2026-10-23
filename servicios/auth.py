@@ -19,6 +19,7 @@ def login_user():
                 "name": doc.get("name"),
                 "role": doc.get("role", "user")
             }
+            st.session_state.logged_in = True
             st.rerun()
         else:
             st.error("Credenciales inválidas")

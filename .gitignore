@@ -4,3 +4,4 @@ lucense-venv
 __pycache__/
 comandos_gc.txt
 pruebas.py
+.vscode
